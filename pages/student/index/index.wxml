@@ -1,0 +1,42 @@
+
+<!--pages/student/student.wxml-->
+<view class="head">
+  <text style="font-size:26rpx; color:white; margin-left:15px; margin-right:7.5px;">北京</text>
+  <navigator url="../search/search" class="search">
+    <icon type="search"></icon>
+    <text style="color:#b2b2b2; font-size:26rpx;">输入本科学校</text>
+  </navigator>
+  <navigator url="../mine/mine">
+  <image src="../../image/ic_student.png" class="icon_info"></image>
+  </navigator>
+</view>
+
+
+<view class="select_school">请选择你的本科学校</view>
+<block wx:for="{{areas}}">
+  <view style="background:#FFFFFF;">
+    <view style="display:flex; align-items: center; height:44px; font-size:28rpx; color:#666666; padding-left:15px;">{{item}}</view>
+    <view class="divider-horizontal" style="margin-left:10px" />
+  </view>
+</block>
+<view style="height:91px;"/>
+
+<view wx:if="{{true}}" style="position:fixed; bottom:0px; background:#FFFFFF; width:100%;">
+  <view style="background:#CCCCCC; height:1px;" />
+  <view style="display:flex; align-items:center; height:90px;">
+    <image src="../../image/default_avatar.png" style="height:50px; width:50px; margin-left:10px; margin-right:10px;"></image>
+    <view style="display:flex; flex:1; flex-direction: column;">
+      <view style="font-size: 32rpx; color:#353535; margin-bottom:15rpx;">咨询师姓名</view>
+      <view style="font-size: 26rpx; color:#a9a9a9; line-height:37rpx;">咨询时间：2017/3/13 13:00-14:00</view>
+      <view style="font-size: 26rpx; color:#a9a9a9; line-height:37rpx;">咨询地点：中央民族大学西门</view>
+    </view>
+    <view wx:if="{{true}}" style="display:flex; flex-direction: column; height:100%">
+      <text style="color:#b81f00; font-size:30rpx; margin-right:13px; margin-top:8px; text-align:right;">待评价</text>
+      <button size="mini" type="primary" style="margin-right:13px; margin-top:20px; color:#FFFFFF">评价</button>
+    </view>
+    <view wx:if="{{false}}" style="display:flex; flex-direction: column; height:100%">
+      <text style="color:#09bb07; font-size:30rpx; margin-right:13px; margin-top:8px;">预约成功</text>
+      <button size="mini" style="margin-right:13px; margin-top:20px; background-color:#0080ff; color:#FFFFFF">查看</button>
+    </view>
+  </view>
+</view>

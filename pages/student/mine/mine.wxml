@@ -1,0 +1,30 @@
+
+<!--pages/student/mine/mine.wxml-->
+<view class="top_tab">
+  <view class="tab_content">
+    <text class="{{current_index == 0 ? 'tab_select' : 'tab_unselect'}}">未完成订单</text>
+  </view>
+  <view class="tab_content">
+    <text class="{{current_index == 1 ? 'tab_select' : 'tab_unselect'}}">已完成订单</text>
+  </view>
+</view>
+<swiper bindchange="switchTab" current="0" style="height:{{swiperHeight}}px;">
+  <swiper-item>
+    <scroll-view style="height:100%;" scroll-y="true" bindscrolltolower="loadMoreData">
+      <block wx:for="{{orders}}">
+        <navigator url="../order/order">
+          <include src="mine-item.wxml" />
+        </navigator>
+      </block>
+    </scroll-view>
+  </swiper-item>
+  <swiper-item>
+    <scroll-view style="height:100%;" scroll-y="true" bindscrolltolower="loadMoreData">
+      <block wx:for="{{orders}}">
+        <navigator url="../index/index">
+          <include src="mine-item.wxml" />
+        </navigator>
+      </block>
+    </scroll-view>
+  </swiper-item>
+</swiper>

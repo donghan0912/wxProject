@@ -1,0 +1,5 @@
+<!--pages/assistant/info/school/school.wxml-->
+<view style="height:10px;"/>
+<block wx:for="{{schools}}">
+<button style="height: 44px; margin-top:10px; margin-left: 15px; margin-right: 15px; background-color: #ffffff; color: #353535; font-size:34rpx;" id="{{index}}" bindlongtap="itemlongclick">{{item}}</button>
+</block>

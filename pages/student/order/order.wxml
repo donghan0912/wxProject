@@ -1,0 +1,76 @@
+
+<!--pages/student/order/order.wxml-->
+<view class="head">
+  <view style="display:flex; align-items:center; height:100%;">
+    <view wx:if="{{false}}" class="status" style="background-color: #0080ff;">
+      <image src="../../image/sele.png" class="status_img"></image>
+      <text>待审核</text>
+    </view>
+    <view wx:if="{{false}}" class="status">
+      <image src="../../image/sele.png" class="status_img"></image>
+      <text>预约成功</text>
+    </view>
+    <view wx:if="{{false}}" class="status" style="background-color: #0080ff;">
+      <image src="../../image/sele.png" class="status_img"></image>
+      <text>待评价</text>
+    </view>
+    <view wx:if="{{true}}" class="status">
+      <image src="../../image/sele.png" class="status_img"></image>
+      <text>评价成功</text>
+    </view>
+    <text style="color:#a9a9a9; font-size:24rpx;">下单时间：2017-3-15 15:01</text>
+  </view>
+</view>
+
+<!--咨询师信息-->
+<view style="background:#FFFFFF; margin-top:10px;">
+  <view style="display: flex; height: 70px; align-items: center">
+    <image src="../../image/default_avatar.png" style="height:50px; width:50px; margin-left:15px; margin-right:10px;"></image>
+    <text style="color:#353535; font-size:32rpx;">李老师</text>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <view class="exactly_content">
+    <text style="color:#888888; width: 90px; margin-left: 15px;font-size: 28rpx;">咨询时间</text>
+    <text style="font-size:28rpx; color:#666666">2017-3-15 15:00-16:00</text>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <view class="wrap_content">
+    <text style="color:#888888; width: 90px; margin-left: 15px;font-size: 28rpx;">咨询地点</text>
+    <text class="location">北京市海淀区中国技术交易大厦A座17层</text>
+  </view>
+</view>
+<view style="color:#888888; font-size:28rpx; margin-top:20px; margin-left:15px; margin-bottom:10px;">预约信息</view>
+
+<!--学生信息-->
+<view style="background:#FFFFFF; margin-top:10px;">
+  <view class="exactly_content">
+    <text style="width: 90px; margin-left:15px;color: #666666;font-size:34rpx;">姓名</text>
+    <text style="color:#353535; font-size:34rpx;">王子文</text>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <view class="exactly_content">
+    <text style="width: 90px; margin-left:15px;color: #666666;font-size:34rpx;">手机号码</text>
+    <text style="color:#353535; font-size:34rpx;">158xxxxxxxx</text>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <view class="wrap_content">
+    <text style="width: 90px; margin-left:15px;color: #666666;font-size:34rpx;">备注</text>
+    <text class="remark">诗歌，是一种文学体裁，透过语言，除了表达文字的意义外，也表达情感与美感，引发共鸣</text>
+  </view>
+</view>
+
+<!--我的评价-->
+<view style="background:#FFFFFF; display:flex; flex-direction: column; margin-top:10px; margin-bottom:20px;">
+  <view style="height:59px; display:flex; align-items:center; margin-left:9px;">
+    <image src="../../image/star.png" style="height:24px;width:24px;padding:6px;" wx:for="12345"></image>
+    <image src="../../image/unstar.png" style="height:24px;width:24px; padding:6px;" wx:for="12345"></image>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <text style="color:#353535; font-size:34rpx; margin-left:15px; margin-top:20px; margin-bottom:20px;">我的评价</text>
+  <text class="appraise">诗歌，是一种文学体裁，透过语言，除了表达文字的意义外，也表达情感与美感，引发共鸣诗歌，是一种文学体裁，透过语言，除了表达文字的意义外，</text>
+</view>
+
+<!--评价按钮-->
+<navigator url="../appraise/appraise">
+<button class="btn" bindtap="appraise">评价</button>
+</navigator>

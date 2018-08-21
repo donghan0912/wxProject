@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/assistant/index/index",
+    "pages/student/order/order",
+    "pages/student/assistantdetail/assistantdetail",             
+    "pages/student/assistantdetail/reservesuccess/reservesuccess",
+    "pages/student/assistantdetail/reserveinfo/reserveinfo",
+    "pages/student/index/index",
+    "pages/student/appraise/appraise",
+    "pages/student/mine/mine",
+    "pages/student/search/search",
+    "pages/student/searchresult/searchresult",
+   
+    "pages/assistant/mine/mine",
+    "pages/assistant/msg/msg",
+    "pages/assistant/order/order",
+    "pages/assistant/timedetail/timedetail",
+    "pages/assistant/info/info",
+    "pages/assistant/info/location/add/add",
+    "pages/assistant/info/location/location",
+    "pages/assistant/info/school/school",
+    "pages/assistant/info/intro/intro",
+    "pages/assistant/info/name/name",
+    
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0080ff",
+    "navigationBarTitleText": "海文咨询师",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/assistant/index/index",
+        "text": "消息",
+        "iconPath": "pages/image/msg_normal.png",
+        "selectedIconPath": "pages/image/msg_selected.png"
+      },
+      {
+        "pagePath": "pages/assistant/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/image/mine_normal.png",
+        "selectedIconPath": "pages/image/mine_selected.png"
+      }
+    ],
+    "color": "#999999",
+    "selectedColor": "#0080ff",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white"
+  }
+}

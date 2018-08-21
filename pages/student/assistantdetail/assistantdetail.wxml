@@ -1,0 +1,53 @@
+
+<!--pages/student/assistantdetail/assistantdetail.wxml-->
+<scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" bindscrolltolower="loadMore">
+  <view class="blur" style="background-image:url(http://p1.meituan.net/165.220/movie/acf88770d5b1d548bf8732b0691600a9697009.jpg)"></view>
+  <view class="avatar">
+    <view style="display:flex; flex-direction: column; align-items:center; width:100%;">
+      <image src="../../image/default_avatar.png" mode="aspectFit" style="width:50px;height:50px;" />
+      <view style="color:#FFFFFF; font-size:34rpx; margin-top:10px;">咨询师姓名</view>
+    </view>
+  </view>
+  <view style="background-color:#FFFFFF; margin-top:10px;">
+    <view style="display:flex;">
+      <image src="../../image/ic_serving_school.png" style="height:23px; width:23px;"></image>
+      <view>服务的学校</view>
+    </view>
+    <view>{{school}}</view>
+  </view>
+  <view style="display:flex;">
+    <view style="display:flex; position:absolute;">温馨提示：</view>
+    <view style="text-indent:85px;">咨询师给起数咨询师给起数咨询师给起数咨询师给起数咨询师给起数咨询师给起数咨询师给起数咨师给起数</view>
+  </view>
+  <view style="background-color:#FFFFFF;">
+    <view style="display:flex;">
+      <image src="../../image/ic_serving_school.png" style="height:23px; width:23px;"></image>
+      <view>自我介绍</view>
+    </view>
+    <view>自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍自我介绍</view>
+  </view>
+  <view style="background-color:#FFFFFF; margin-top:10px;">
+    <view style="display:flex;">
+      <image src="../../image/ic_serving_school.png" style="height:23px; width:23px;"></image>
+      <view>咨询地点</view>
+    </view>
+    <block wx:for="123345">
+      <view>北京市海淀区中国技术交易大厦A座17层</view>
+    </block>
+  </view>
+  <view style="background:#FFFFFF; margin-top:10px; padding-left:15px; ">
+    <view>评价（{{ssss}}）</view>
+    <block wx:for="{{appraise}}">
+      <view hidden="{{index > 2 ? hiddens: false}}" style="min-height:91.5px; display:flex; flex-direction: column; margin-top:15px; position:relative;">
+        <view style=" display:flex; margin-bottom:25px;">
+          <image src="../../image/default_avatar.png" mode="aspectFit" style="width:50px;height:50px;" />
+          <view style="flex:1; margin-left:10px; font-size:26rpx; color:#888888; line-height:18.5px; margin-right:27px;">学生一：咨询老师很好咨询老师很好咨询老师很好咨询老师很好咨询老师很好咨询老师很好很好咨询老师很好很好咨询老师很好很好咨询老师很好咨询老师很好咨询老师很好咨询老师很好很好咨询老师很好很好咨询老师很好很好咨询老师很好咨询老师很好咨询老师很好咨询老师很好很好咨询老师很好很好咨询老师很好sdfsdf
+          </view>
+        </view>
+        <view style="display:flex; position:absolute; bottom:4px; right:15px; color:#d9d9d9; font-size:28rpx; justify-content:flex-end;">2017-3-17 17:47</view>
+        <view class="divider-horizontal" />
+      </view>     
+    </block>
+    <view wx:if="{{appraise.length > 3 ? true : false}}" style="display:flex; flex-direction: column; align-items:center;" bindtap="clickLoadMore">{{hiddens ? '查看更多' : '收起'}}</view>
+  </view>
+</scroll-view>

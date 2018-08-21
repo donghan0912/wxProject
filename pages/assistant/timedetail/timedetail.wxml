@@ -1,0 +1,41 @@
+
+<!--pages/assistant/timedetail/timedetail.wxml-->
+<view style="display:flex; background-color:#FFFFFF;">
+  <view class="head" style="padding-left:{{orders.length > 0 ? 0 : 66}}px;">
+    <text class="time">10：00-11：00</text>
+    <text class="date">星期三 2017-03-09</text>
+  </view>
+  <switch wx:if="{{orders.length <= 0}}" type="switch" color="#0080ff" class="switch_btn" />
+</view>
+
+<view style="background:#FFFFFF; margin-top:10px;" wx:for="{{orders}}">
+  <view class="exactly_content">
+    <text class="content">姓名</text>
+    <text style="color:#353535; font-size:34rpx;">王子文</text>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <view class="exactly_content">
+    <text class="content">手机号码</text>
+    <text style="color:#353535; font-size:34rpx;">158xxxxxxxx</text>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <view class="wrap_content">
+    <text class="content">备注</text>
+    <text class="remark">诗歌，是一种文学体裁，透过语言，除了表达文字的意义外，也表达情感与美感，引发共鸣</text>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <view class="wrap_content">
+    <text class="content">咨询地点</text>
+    <text class="remark">北京市海淀区中国技术交易大厦A座17层</text>
+  </view>
+  <view class="divider-horizontal" style="margin-left:15px;" />
+  <view class="order_time">
+    <text style="margin-left:15px;">下单时间：</text>
+    <text>2017-3-10 14:00</text>
+  </view>
+</view>
+<view style="height:10px;"/>
+
+<view wx:if="{{orders.length <= 0}}" class="empty_view">
+<text class="empty_content">无人预约</text>
+</view>

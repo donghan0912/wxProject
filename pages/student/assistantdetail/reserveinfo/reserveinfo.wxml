@@ -1,0 +1,39 @@
+<!--pages/student/assistantdetail/reserveinfo/reserveinfo.wxml-->
+<view style="background:#FFFFFF; padding-left:15px; margin-top:10px;">
+<view style="height:43px; display:flex; align-items:center; color:#353535; font-size:28rpx;">李老师</view>
+<view class="divider-horizontal"/>
+<view style="height:43px; display:flex; align-items:center; color:#353535; font-size:28rpx;">2017-3-16 11:00-12:00 星期三</view>
+</view>
+
+<view style="color:#888888; font-size:28rpx; margin-left:15px; margin-top:19px; margin-bottom:10px;">选择咨询地点</view>
+
+<block wx:for="123">
+<view style="background:#FFFFFF; padding-left:15px; padding-right:15px;">
+<view style="min-height:43px; display:flex; align-items:center;">
+<view style="color:#353535; font-size:28rpx; line-height:18px; padding-top:10px; padding-bottom:10px; margin-right:15px; flex:1;">北京市海淀区中国技术交易大厦A座17层</view>
+<icon type="success_no_circle"></icon>
+</view>
+<view class="divider-horizontal"/>
+</view>
+</block>
+
+<view style="color:#888888; font-size:28rpx; margin-left:15px; margin-top:19px; margin-bottom:10px;">个人信息</view>
+
+<view style="background:#FFFFFF; padding-left:15px;">
+<view style="display:flex; align-items:center; height:43px; font-size:34rpx; color:#353535;">
+<view style="width:90px;">姓名</view>
+<input placeholder="姓名" maxlength="10"/>
+</view>
+<view class="divider-horizontal"/>
+<view style="display:flex; align-items:center; height:43px; font-size:34rpx; color:#353535;">
+<view style="width:90px;">手机号码</view>
+<input placeholder="手机号码" maxlength="11"/>
+</view>
+</view>
+
+
+<view style="color:#888888; font-size:28rpx; margin-left:15px; margin-top:19px; margin-bottom:10px;">备注（选填）</view>
+
+<textarea style="font-size:34rpx; color:#353535; height:80px; width:100%; background-color:#fff; margin-bottom:30px; padding:2px;"placeholder="输入你的问题" maxlength="200"/>
+
+<button style="height: 44px; margin-left: 15px; margin-right: 15px; background-color: #0080ff; color: #eee; font-size:34rpx;" bindtap="save">确定</button>

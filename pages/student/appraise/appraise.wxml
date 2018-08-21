@@ -1,0 +1,20 @@
+
+<!--pages/student/appraise/appraise.wxml-->
+<view style="color:#888888; font-size:28rpx; margin-left:15px; margin-top:19px; margin-bottom:10px;">请给咨询师打个分</view>
+
+<view style="height:60px; display:flex; align-items:center; background:#FFFFFF;">
+<view style="flex:1;">
+<image src="../../image/{{starNum >= 1 ? '' : 'un'}}star.png" style="height:24px;width:24px;padding:10px; margin-left:5px;" bindtap="choose" data-id="1"></image>
+<image src="../../image/{{starNum >= 2 ? '' : 'un'}}star.png" style="height:24px;width:24px;padding:10px;" bindtap="choose" data-id="2"></image>
+<image src="../../image/{{starNum >= 3 ? '' : 'un'}}star.png" style="height:24px;width:24px;padding:10px;" bindtap="choose" data-id="3"></image>
+<image src="../../image/{{starNum >= 4 ? '' : 'un'}}star.png" style="height:24px;width:24px;padding:10px;" bindtap="choose" data-id="4"></image>
+<image src="../../image/{{starNum >= 5 ? '' : 'un'}}star.png" style="height:24px;width:24px;padding:10px;" bindtap="choose" data-id="5"></image>
+</view>
+<view style="color:#e64340; font-size:26rpx; margin-right:15px;">5分 很满意</view>
+</view>
+
+<view style="color:#888888; font-size:28rpx; margin-left:15px; margin-top:19px; margin-bottom:10px;">请评价下咨询师</view>
+
+<textarea style="font-size:34rpx; color:#353535; height:80px; width:100%; background-color:#fff; margin-bottom:30px; padding:2px;"placeholder="请输入你的评价" maxlength="200"/>
+
+<button style="height: 44px; margin-left: 15px; margin-right: 15px; background-color: #0080ff; color: #eee; font-size:34rpx;" bindtap="save">提交</button>

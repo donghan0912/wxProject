@@ -1,0 +1,69 @@
+
+<!--pages/assistant/mine/mine.wxml-->
+<view style="height:20rpx;"></view>
+<view class="head" bindtap="startUserInfo">
+  <view style="flex:1">个人信息</view>
+  <image src="../../image/arrowright.png" style="height:32rpx;width:32rpx;"></image>
+</view>
+<view class="body">
+  <image src="../../image/arrowright.png" style="height:32rpx;width:32rpx;" bindtap="switch1"></image>
+  <view style="display:flex; flex:1; justify-content: center;font-size:14px; color:#888888;">12月27日-12月30日</view>
+  <image src="../../image/arrowright.png" style="height:32rpx;width:32rpx;" bindtap="switch2"></image>
+</view>
+<view class="divider-horizontal"></view>
+
+
+<swiper style="height:370px; background-color:#fff" current="{{current_index}}">
+  <block wx:for="12">
+    <swiper-item>
+      <view style="display:flex; flex-direction: raw">
+        <view class="divider-vertical"></view>
+        <view style="display:flex; flex-direction: column; flex:1;">
+
+          <!--时间段 周一到周日-->
+          <view style="display:flex;">
+            <view class="center" style="writing-mode:vertical-lr;width:53px; height:70px;font-size:12px; color:#888888">时 间 段</view>
+            <view class="divider-vertical"></view>
+            <block wx:for="1234567">
+              <view class="center" style="display: flex; flex-direction:column; flex:1; font-size:14px; color:#888888">
+                <view class="center">{{weeks[index].week}}</view>
+                <view class="center" style="padding-top: 2px;color:#b2b2b2;">{{weeks[index].date}}</view>
+                <view class="center" style="padding-top: 4px;color:#ff6e52">{{weeks[index].num}}人</view>
+              </view>
+              <view class="divider-vertical"></view>
+            </block>
+          </view>
+
+          
+          <view style="display:flex;">
+
+            <!--时间-->
+            <view style="display:block; width:53px;">
+              <block wx:for="{{time}}">
+                <view class="divider-horizontal"></view>
+                <view class="center" style="height:35px; width:53px; padding-left:4px; font-size:12px; color:#888888">{{time[index]}}</view>
+              </block>
+            </view>
+            <view class="divider-vertical"/>
+
+            <!--表格-->
+            <block wx:for="1234567" wx:for-index="i">
+              <view style="display:flex; flex-direction:raw; flex:1">
+                <view style="display:flex; flex-direction:column; flex:1">
+                  <block wx:for="12345678">
+                    <view class="divider-horizontal"></view>
+                    <view class="center" style="height:35px; background-color:{{array[i][index]}}" data-num="{{reserves[i][index]}}" data-column="{{i}}" data-row="{{index}}" bindtap="itemClick">{{tttt4[i][index] == mark ? "预约" : ""}}</view>
+                  </block>
+                </view>
+                <view class="divider-vertical"></view>
+              </view>
+            </block>
+
+          </view>
+          <view class="divider-horizontal"/>
+        </view>
+
+      </view>
+    </swiper-item>
+  </block>
+</swiper>

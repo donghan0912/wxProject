@@ -1,0 +1,23 @@
+<!--pages/assistant/msg/msg.wxml-->
+<view style="height:10px;"></view>
+<view wx:for="{{msgs}}">
+<view style="background:#fff; padding-left:15px; padding-right:20px; padding-bottom:15px;">
+<view style="display: flex; margin-bottom:10px;">
+<image src="{{item.url}}" style="height:50px;width:50px; margin-top:20px;"></image>
+<view style="display: flex; flex-direction: column; flex:1;  margin-top:25px; margin-left:10px;">
+<text style="font-size:34rpx; color:#353535;">{{item.name}}</text>
+<view>
+<block wx:for="{{item.star}}">
+<image src="../../image/star.png" style="height:16px;width:16px;"></image>
+</block>
+<block wx:for="{{5-item.star}}">
+<image src="../../image/unstar.png" style="height:16px;width:16px;"></image>
+</block>
+</view>
+</view>
+<text style=" margin-top:25px; font-size:26rpx; color:#a9a9a9">{{item.date + "  " + item.time}}</text>
+</view>
+<text style=" margin-top:20px; font-size:26rpx; color:#a9a9a9;">{{item.assess}}</text>
+</view>
+<view style="height:10px;"></view>
+</view>

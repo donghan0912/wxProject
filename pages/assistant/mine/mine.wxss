@@ -1,0 +1,26 @@
+/* pages/assistant/mine/mine.wxss */
+.head {
+    display: flex;
+    background-color: #FFFFFF;
+    margin-bottom: 10px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 44px;
+    font-size: 17px;
+    color: #353535;
+}
+.body {
+    display: flex;
+    font-size:14px;
+    background-color: #FFFFFF;
+    height:44px;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

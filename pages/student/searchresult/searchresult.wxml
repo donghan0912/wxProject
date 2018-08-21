@@ -1,0 +1,19 @@
+
+<!--pages/student/searchResult/searchResult.wxml-->
+<view class="head">
+  <view class="search">
+    <icon type="search"></icon>
+    <input style="width:100%" placeholder="输入本科学校" bindinput="bindKeyInput" />
+  </view>
+  <view style="color:#fff; padding-left:10px; padding-right: 10px;" bindtap="search">搜索</view>
+</view>
+<view style="display:flex; align-items:center; height:91px; background:#FFFFFF; margin-top:10px;">
+  <image src="../../image/default_avatar.png" style="height:50px; width:50px; margin-left:10px; margin-right:10px;"></image>
+  <view style="display:flex; flex:1; flex-direction: column;">
+    <view style="font-size: 32rpx; color:#353535; margin-bottom:15rpx;">咨询师姓名</view>
+    <view style="font-size: 26rpx; color:#a9a9a9; line-height:37rpx;">咨询时间：2017/3/13 13:00-14:00</view>
+    <view style="font-size: 26rpx; color:#a9a9a9; line-height:37rpx;">咨询地点：中央民族大学西门</view>
+  </view>
+  <image src="../../image/arrowright.png" style="height:32rpx;width:32rpx; margin-right:15px"></image>
+</view>
+<view wx:if="{{false}}" style="color:#888888; font-size: 32rpx; display:flex; align-items:center; flex-direction: column; margin-top:136px;">暂不支持该学校的咨询，请选择其它学校</view>

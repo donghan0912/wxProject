@@ -1,0 +1,9 @@
+<!--pages/assistant/info/location/location.wxml-->
+<block wx:for="{{locations}}">
+<view style="display: flex;  align-items: center; height:76px; background-color:#fff; ">
+<text style="text-align:center; width:100%; color: #353535; font-size:34rpx;">{{item}}</text>
+</view>
+<view class="divider-horizontal" hidden="{{index == (locations.length - 1) ? true : false}}"></view>
+</block>
+
+<button style="height: 44px; margin-top:30px; margin-left: 15px; margin-right: 15px; background-color: #0080ff; color: #eee; font-size:34rpx;" bindtap="addLocation">添加</button>

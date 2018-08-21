@@ -1,0 +1,11 @@
+<!--pages/student/assistantdetail/reservesuccess/reservesuccess.wxml-->
+<view style="display:flex; align-items:center; flex-direction: column; margin-top:50px; margin-bottom:30px;">
+<icon type="success" size="100"></icon>
+</view>
+<view style="display:flex; flex-direction:column; align-items:center; color:#353535; font-size:40rpx;">操作成功</view>
+
+<view class="prompt-message">您的预约订单已提交，咨询师会与您电话确认。</view>
+
+<button hover-class="other-button-hover" type="default" class="order-detail">查看订单详情</button>
+
+<button type="default" class="assistant-detail" bindtap="assistantDetail">返回咨询师详情</button>

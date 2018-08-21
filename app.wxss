@@ -1,0 +1,23 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/*竖直分割线*/
+.divider-vertical {
+  width: 1px;
+  background-color: #ededed;
+}
+/*水平分割线*/
+.divider-horizontal {
+  height: 1px;
+  background-color: #ededed;
+}
+Page {
+  background-color: #EFEFF4;
+}

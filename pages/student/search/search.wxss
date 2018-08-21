@@ -1,0 +1,19 @@
+/* pages/student/search.wxss */
+.head {
+    display: flex;
+    background-color: #0080ff;
+    align-items: center;
+    padding: 8rpx;
+    font-size: 14px;
+    padding-left: 10px;
+    height: 44px;
+}
+.search {
+    background-color: #FFFFFF;
+    display: flex;
+    border-radius: 30px;
+    flex: 1;
+    height: 24px;
+    align-items: center;
+    padding: 10rpx;
+}

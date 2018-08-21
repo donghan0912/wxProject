@@ -1,0 +1,30 @@
+<!--pages/assistant/order/order.wxml-->
+<view class="order_time">下单时间: 2017-2-23 17:15</view>
+<view class="body">
+<image src="../../image/location.png" class="ic_location"></image>
+<text style="color:#666666; font-size:28rpx;">2017-2-23 17:00-18:00</text>
+</view>
+<view style="height:1px; margin-left:15px;"></view>
+<view class="body">
+<image src="../../image/location.png" class="ic_location"></image>
+<text style="color:#666666; font-size:28rpx;">中央人民大学西门</text>
+</view>
+
+<view class="body" style="margin-top:10px;">
+<text class="content">姓名</text>
+<text style="color:#353535; font-size:34rpx;">王子文</text>
+</view>
+<view style="height:1px; margin-left:15px;"></view>
+<view class="body">
+<text class="content">手机号码</text>
+<text style="color:#353535; font-size:34rpx;">158xxxxxxxx</text>
+</view>
+<view style="height:1px; margin-left:15px;"></view>
+<view style="display:flex; background:#fff; padding-top:10px; padding-bottom:10px;">
+<text class="content">备注</text>
+<text class="remark">诗歌，是一种文学体裁，透过语言，除了表达文字的意义外，也表达情感与美感，引发共鸣</text>
+</view>
+<view style="height:1px; margin-left:15px;"></view>
+
+<button class="btn_confirm" bindtap="confirm_click">确定预约</button>
+<button class="btn_refuse" bindtap="refuse_click">拒绝预约</button>

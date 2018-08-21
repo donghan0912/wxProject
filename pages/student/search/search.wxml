@@ -1,0 +1,19 @@
+
+<!--pages/student/search.wxml-->
+<view class="head">
+  <view class="search">
+    <icon type="search"></icon>
+    <input focus="true" style="width:100%" placeholder="输入本科学校" bindinput="bindKeyInput" />
+  </view>
+  <view style="color:#fff; padding-left:10px; padding-right: 10px;" bindtap="search">搜索</view>
+</view>
+
+
+<block wx:for="{{schools}}">
+<view style="background:#FFFFFF;">
+<view style="display:flex; align-items: center; height:44px; font-size:28rpx; color:#666666; padding-left:15px;">{{item}}</view>
+<view class="divider-horizontal" style="margin-left:10px"/>
+</view>
+</block>
+
+<view wx:if="{{false}}" style="color:#888888; font-size: 32rpx; display:flex; align-items:center; flex-direction: column; margin-top:136px;">暂不支持该学校的咨询，请选择其它学校</view>

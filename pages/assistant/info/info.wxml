@@ -1,0 +1,35 @@
+<!--pages/assistant/info/info.wxml-->
+<view style="height:10px;"></view>
+
+<view class="avatar_style">
+<text style="flex:1; font-size:34rpx; color:#353535; padding-left:15px;">头像</text>
+<image src="../../image/ic_msg.png" style="height:50px;width:50px;"></image>
+<image src="../../image/arrowright.png" class="arrowright"></image>
+</view>
+
+
+<view class="body" style="background-color: #fff; margin-bottom: 10px;" bindtap="nameClick">
+<text style="flex:1;  padding-left:15px;">姓名</text>
+<text style="font-size:28rpx; color:#888888;">李老师</text>
+<image src="../../image/arrowright.png" class="arrowright"></image>
+</view>
+
+
+<view style="background-color:#FFFFFF;">
+<view class="body" bindtap="introClick">
+<text style="flex:1; padding-left:15px;">个人介绍</text>
+<image src="../../image/arrowright.png" class="arrowright"></image>
+</view>
+<view class="divider-horizontal" style="margin-left:15px;"></view>
+<view class="body" bindtap="locationClick">
+<text style="padding-left:15px;">咨询地点</text>
+<text class="location">北京市海淀区技术交易大厦A座17层</text>
+<image src="../../image/arrowright.png" class="arrowright"></image>
+</view>
+<view class="divider-horizontal" style="margin-left:15px;"></view>
+<view class="body" bindtap="schoolClick">
+<text style="padding-left:15px;">服务学校</text>
+<text class="school">北京大学，北京邮电大学，北京航空航天大学</text>
+<image src="../../image/arrowright.png" class="arrowright"></image>
+</view>
+</view>
